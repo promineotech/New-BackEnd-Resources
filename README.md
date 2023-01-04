@@ -1,6 +1,9 @@
 # Java CheatSheet
-#####                           Copyright (c) 2023, Promineo Tech
-#####                           Promineo Tech Academic Team
+
+```Java
+Copyright (c)2023 Promineo Tech
+Promineo Tech Academic Team
+```
 
 ## Variable Declaration
 ```Java

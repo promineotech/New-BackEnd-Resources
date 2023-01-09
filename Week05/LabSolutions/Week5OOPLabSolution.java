@@ -43,11 +43,14 @@ public class Week5OOPLabSolution {
 		//			b. suit field (Clubs, Diamonds, Hearts, Spades)
 		//			c. value field for comparing against other cards (e.g. 2-14)
 		//
-		//		Methods:  This class can have any method that would be useful.
-		//			a. display() to display the card information to the Console.
+		//		Methods:  This class can have any useful method.
+		//			a. describe() to display the card information to the Console.
 		//			b. Getters & Setters 
+		//
 		System.out.println("\nQuestion 1: Card Class");
 		Card tempCard = new Card("Two", "Hearts", 2);
+		
+		// Call the describe method on the newly instantiated card.
 		tempCard.describe();
 
 		// 2. Deck Class:
@@ -57,9 +60,19 @@ public class Week5OOPLabSolution {
 		//
 		//		Constructor: The constructor for the Deck Class should
 		// 			instantiate all 52 standard playing cards and add them to the cards list.
+		//
+		//		Methods:  
+		//			a.  describe() to describe the deck -- 
+		//					print out all of the cards in the deck.
+		//
 		System.out.println("\nQuestion 2: Deck Class");
 		Deck deck = new Deck();
 		System.out.println("Deck has been created!");
+		// Call the describe method on the newly instantiated deck.
+		deck.describe();
+		
+		
+		
 		
 		// 3. Deck shuffle() Method:
 		//		Add a shuffle method to Deck within the Deck Class
@@ -67,12 +80,9 @@ public class Week5OOPLabSolution {
 		deck.shuffle();
 		System.out.println("Shuffled Deck:");
 		System.out.println("--------------");
-
-		System.out.println ("Uncomment for-loop to see shuffled deck.");
-		// TEST Shuffled Deck
-		//		for (Card card : deck.cards) {
-		//			card.describe();
-		//		}
+		// Call the describe method on the newly shuffled deck.
+		deck.describe();
+		
 		
 		// 4. Deck draw() Method:
 		//		Add a draw method to Deck within the Deck Class
@@ -98,7 +108,7 @@ public class Week5OOPLabSolution {
 		System.out.println("--------------------------");
 		for (int i = 1; i <= numOfPlayers; i++) {
 			String playerName = "Player " + i;
-			System.out.println(playerName + "\n--------------------------");
+			System.out.println(playerName + "\n--------");
 			List<Card> playerList = gameBoard.get(playerName);
 			for (Card handCard : playerList) {
 				handCard.describe();
@@ -132,6 +142,14 @@ public class Week5OOPLabSolution {
 				finalGameMap.replace(playerName, playerList);			
 			}
 		}
+		
+		if (52 % numOfPlayers != 0) {
+			System.out.print("With " + numOfPlayers + " players -- ");
+			System.out.println("Cards left in deck: " + 52%numOfPlayers); 
+		} else {
+			System.out.println("All cards have been dealt");
+		}
+		
 		return finalGameMap;
 	}
 

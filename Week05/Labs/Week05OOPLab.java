@@ -43,13 +43,15 @@ public class Week05OOPLab {
 		//			b. suit field
 		//			c. value field for comparing against other cards.
 		//
-		//		Methods:  This class can have any method that would be useful.
-		//			a. display() to display the card information to the Console.
+		//		Methods:  This class can have any useful method.
+		//			a. describe() to display the card information to the Console.
 		//			b. Getters & Setters 
+		//
 		System.out.println("\nQuestion 1: Card Class");
 		// Add your code here to instantiate a Card
 		
 		
+		// Call the describe method on the newly instantiated card.
 		
 		
 		
@@ -57,18 +59,22 @@ public class Week05OOPLab {
 
 		// 2. Deck Class:
 		//		Create a class called Deck.
-		//		Fields:  This class should have a list of Card field called cards that will hold all the cards in the deck. 
+		//		Fields:  This class should have a list of Card field called cards 
+		//				 that will hold all the cards in the deck. 
 		//			List<Card> cards = new ArrayList<Card>(); 
 		//
 		//		Constructor: The constructor for the Deck Class should
 		// 			instantiate all 52 standard playing cards and add them to the cards list.
 		//
 		//		Methods:  
-		//			a.  describe() to describe the deck -- 
+		//			a.  describe() to describe the deck to the Console -- 
 		//					print out all of the cards in the deck.
+		//
 		System.out.println("\nQuestion 2: Deck Class");
 	    // Add your code here to instantiate a Deck	
 	    
+	    
+	    // Call the describe method on the newly instantiated deck.
 	    
 	    
 	    
@@ -76,18 +82,19 @@ public class Week05OOPLab {
 		
 		
 		// 3. Deck shuffle() Method:
-		//		Add a shuffle method to Deck within the Deck Class
+		//		Add a shuffle method within the Deck Class
 		System.out.println("\nQuestion 3: Deck shuffle() method");
 		// Test your method here
 		
 		
 		
-		
+		// Call the describe method on the newly shuffled deck.
+
 		
 		
 		
 		// 4. Deck draw() Method:
-		//		Add a draw method to Deck within the Deck Class
+		//		Add a draw method within the Deck Class
 		System.out.println("\nQuestion 4: Deck draw() method");
 		// Test your method here
 		
@@ -109,7 +116,6 @@ public class Week05OOPLab {
 		System.out.println("\nQuestion 5: Create Game");
 		// Call your method here
 
-		
 		
 		
 		

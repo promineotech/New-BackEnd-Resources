@@ -49,6 +49,11 @@ public class Week05OOPLab {
 		System.out.println("\nQuestion 1: Card Class");
 		// Add your code here to instantiate a Card
 		
+		
+		
+		
+		
+		
 
 		// 2. Deck Class:
 		//		Create a class called Deck.
@@ -57,8 +62,17 @@ public class Week05OOPLab {
 		//
 		//		Constructor: The constructor for the Deck Class should
 		// 			instantiate all 52 standard playing cards and add them to the cards list.
+		//
+		//		Methods:  
+		//			a.  describe() to describe the deck -- 
+		//					print out all of the cards in the deck.
 		System.out.println("\nQuestion 2: Deck Class");
 	    // Add your code here to instantiate a Deck	
+	    
+	    
+	    
+	    
+	    
 		
 		
 		// 3. Deck shuffle() Method:
@@ -68,16 +82,19 @@ public class Week05OOPLab {
 		
 		
 		
-		System.out.println ("Uncomment for-loop to see shuffled deck.");
-		// TEST Shuffled Deck
-		//		for (Card card : deck.cards) {
-		//			card.describe();
-		//		}
+		
+		
+		
 		
 		// 4. Deck draw() Method:
 		//		Add a draw method to Deck within the Deck Class
 		System.out.println("\nQuestion 4: Deck draw() method");
 		// Test your method here
+		
+		
+		
+		
+		
 		
 		
 		
